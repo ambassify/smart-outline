@@ -53,9 +53,9 @@ You can also [view the online QUnit test page](https://ambassify.github.io/smart
 
 | Method   |      Return      |  Description |
 |----------|:-------------:|------|
-| .init() | `HTMLElement` | Check is smart outline is active |
+| .init() | `HTMLElement` | Initialize the smart outline module |
 | .isKeyboardUser() | `boolean` | Return `true` if the current user is a keyboard user |
-| .isEnabled() | `boolean` | Check is smart outline is active |
+| .isEnabled() | `boolean` | Check if smart outline is active |
 | .destroy() | `null` | Disable smart outline by remove injected style element and all event listeners |
 
 ## Browser Support
