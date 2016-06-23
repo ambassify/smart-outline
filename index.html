@@ -35,7 +35,7 @@
 
             <h2>Form Example</h2>
             <label for="firstname">First Name</label>
-            <input type="text" name="firstname" id="firstname" placeholder="John" autofocus />
+            <input type="text" name="firstname" id="firstname" placeholder="John" />
 
             <label for="lastname">Last Name</label>
             <input type="text" name="lastname" id="lastname" placeholder="Doe" />
@@ -50,5 +50,10 @@
         </div>
 
         <script src="main.js" async defer></script>
+        <script>
+        window.onload = function() {
+            smartOutline.init();
+        }
+        </script>
     </body>
 </html>
