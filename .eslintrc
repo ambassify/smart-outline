@@ -18,7 +18,6 @@
         "curly": 0,
         "no-underscore-dangle": 0,
         "quotes": [2, "single"],
-        "strict": 0,
         "semi": [ 2, "always" ],
         "space-unary-ops": 0,
         "space-infix-ops": 2,
@@ -38,7 +37,6 @@
         "linebreak-style": [2, "unix"],
         "max-nested-callbacks": [2, 3],
         "no-class-assign": 2,
-        "no-const-assign": 2,
         "no-dupe-class-members": 2,
         "no-this-before-super": 2,
         "prefer-const": 1
