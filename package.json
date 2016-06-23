@@ -1,0 +1,26 @@
+{
+  "name": "smart-outline",
+  "version": "0.0.5",
+  "description": "Disabling focus outline without breaking accessibility",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo 'hello'",
+    "serve": "python -m SimpleHTTPServer 7000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambassify/smart-outline.git"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "css",
+    "ux"
+  ],
+  "author": "Wim Mostmans (http://www.sitebase.be/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ambassify/smart-outline/issues"
+  },
+  "homepage": "https://github.com/ambassify/smart-outline#readme"
+}
