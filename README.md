@@ -14,15 +14,6 @@ it creates a global `smartOutline` object on window.
 ### ES6
 >import smartOutline from 'smartOutline';
 
-## Run demo page
-Execute following command:
->npm run serve
-
-and navigate to `http://127.0.0.1:7000`.
-
-# Unit Tests
->npm test
-
 ### Initialize
 smartOutline.init();
 
@@ -30,6 +21,15 @@ smartOutline.init();
 >smartOutline.init({
 >    domId: 'my-custom-id'
 >});
+
+## Run demo page
+Execute following command:
+>npm run serve
+
+and navigate to `http://127.0.0.1:7000`.
+
+## Unit Tests
+>npm test
 
 ## Options
 
