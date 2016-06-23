@@ -12,19 +12,18 @@ resulting in the best of both worlds, visually and accessibility wise.
 This library supports both **AMD** and **CommonJS** module loading and it falls back
 to a global `smartOutline` object.
 
-### Loading the module
->var smartOutline = require('smartOutline');
+```
+// use RequireJS
+var smartOutline = require('smartOutline');
 
-or
+// ES6
+import smartOutline from 'smartOutline';
 
->import smartOutline from 'smartOutline';
+// Load via script tag
+<script src="https://cdn.rawgit.com/ambassify/smart-outline/master/main.js"></script>
 
-or
-
-><script src="https://cdn.rawgit.com/ambassify/smart-outline/master/main.js"></script>
-
-### Initialize
 smartOutline.init();
+```
 
 ### Initialize with custom configuration
 >smartOutline.init({
