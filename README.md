@@ -14,9 +14,13 @@ to a global `smartOutline` object.
 
 ### Loading the module
 >var smartOutline = require('smartOutline');
+
 or
+
 >import smartOutline from 'smartOutline';
+
 or
+
 ><script src="https://cdn.rawgit.com/ambassify/smart-outline/master/main.js"></script>
 
 ### Initialize
