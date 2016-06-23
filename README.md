@@ -6,8 +6,8 @@ resulting in the best of both worlds, visually and accessibility wise.
 
 ## Demo
 
-[View online demo](https://ambassify.github.io/smart-outline/)
-[View JSFiddle demo](https://jsfiddle.net/sitebase/ss2g0aj7/)
+* [View online demo](https://ambassify.github.io/smart-outline/)
+* [View JSFiddle demo](https://jsfiddle.net/sitebase/ss2g0aj7/)
 
 ## Usage
 This library supports both **AMD** and **CommonJS** module loading and it falls back
