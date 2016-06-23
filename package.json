@@ -4,7 +4,9 @@
   "description": "Disabling focus outline without breaking accessibility",
   "main": "main.js",
   "scripts": {
-    "test": "echo 'hello'",
+    "test": "npm run lint && npm run unit",
+    "unit": "phantomjs node_modules/qunit-phantomjs-runner/runner.js file://`pwd`/qunit.html",
+    "lint": "eslint main.js tests.js",
     "serve": "python -m SimpleHTTPServer 7000"
   },
   "repository": {
@@ -22,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/ambassify/smart-outline/issues"
   },
-  "homepage": "https://github.com/ambassify/smart-outline#readme"
+  "homepage": "https://github.com/ambassify/smart-outline#readme",
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "mocha-jsdom": "^1.1.0",
+    "qunit-phantomjs-runner": "^2.2.0"
+  }
 }

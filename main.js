@@ -30,7 +30,7 @@
 
     function ensureInitCalled() {
         if(options === null)
-            throw new Error('Smart Outline is not initialized yet. Make sure to call `.init()` first.')
+            throw new Error('Smart Outline is not initialized yet. Make sure to call `.init()` first.');
     }
 
     var smartOutline = {
@@ -41,7 +41,7 @@
         setCSS: function(css) {
             this.getStyleEl().innerHTML = css;
         },
-        _clickListener: function(evt) {
+        _clickListener: function() {
             smartOutline.setCSS(options.hideFocusCSS);
             window.removeEventListener('click', smartOutline._clickListener, false);
             window.addEventListener('keydown', smartOutline._keyDownListener); // eslint-disable-line
@@ -73,7 +73,6 @@
 
         isKeyboardUser: function() {
             ensureInitCalled();
-            var el = smartOutline.getStyleEl();
             return this.getStyleEl().innerHTML === '';
         },
 
@@ -110,11 +109,15 @@
         },
 
         destroy: function() {
-            ensureInitCalled();
-            var head = document.head || document.getElementsByTagName('head')[0];
-            head.removeChild(smartOutline.getStyleEl());
-            window.removeEventListener('keydown', smartOutline._keyDownListener, false);
-            window.removeEventListener('click', smartOutline._clickListener, false);
+            var el = smartOutline.getStyleEl();
+            if(el) {
+                var head = document.head || document.getElementsByTagName('head')[0];
+                head.removeChild(el);
+
+                options = null;
+                window.removeEventListener('keydown', smartOutline._keyDownListener, false);
+                window.removeEventListener('click', smartOutline._clickListener, false);
+            }
         }
     };
 
