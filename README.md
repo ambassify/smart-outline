@@ -34,14 +34,14 @@ smartOutline.init();
 ## Options
 
 | Option   |      Type      |  Description |
-|----------|:-------------:|------:|
+|----------|:-------------:|------|
 | domId | `string` | ID that is assigned to the style element that gets injected in the DOM |
 | hideFocusCSS | `string` | Overwrite the default CSS to hide the focus outline when a user is using the mouse |
 
 ## Methods
 
 | Method   |      Return      |  Description |
-|----------|:-------------:|------:|
+|----------|:-------------:|------|
 | .init() | `HTMLElement` | Check is smart outline is active |
 | .isKeyboardUser() | `boolean` | Return `true` if the current user is a keyboard user |
 | .isEnabled() | `boolean` | Check is smart outline is active |
