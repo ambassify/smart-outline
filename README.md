@@ -1,18 +1,23 @@
 # Smart Outline [![CircleCI](https://circleci.com/gh/ambassify/smart-outline/tree/master.svg?style=svg&circle-token=447bceb7dddfa4e6972d0044e4157626199a31b1)](https://circleci.com/gh/ambassify/smart-outline/tree/master)
 Disabling focus outline without breaking accessibility.
 This library will only disable the focus outline when the user is using his mouse
-to navigate. Once a users starts using his keyboard the outline is activated again
+to navigate your web page. Once a users starts using his keyboard the outline is activated again
 resulting in the best of both worlds, visually and accessibility wise.
+
+## Demo
+
+[View online demo](https://ambassify.github.io/smart-outline/)
 
 ## Usage
 This library supports both **AMD** and **CommonJS** module loading and it falls back
-it creates a global `smartOutline` object on window.
+to a global `smartOutline` object.
 
-### RequireJS
+### Loading the module
 >var smartOutline = require('smartOutline');
-
-### ES6
+or
 >import smartOutline from 'smartOutline';
+or
+><script src="https://cdn.rawgit.com/ambassify/smart-outline/master/main.js"></script>
 
 ### Initialize
 smartOutline.init();
@@ -30,6 +35,8 @@ and navigate to `http://127.0.0.1:7000`.
 
 ## Unit Tests
 >npm test
+
+You can also [view the online QUnit test page](https://ambassify.github.io/smart-outline/qunit.html).
 
 ## Options
 
