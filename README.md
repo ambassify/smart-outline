@@ -1,4 +1,5 @@
-# Smart Outline [![CircleCI](https://circleci.com/gh/ambassify/smart-outline/tree/master.svg?style=svg&circle-token=447bceb7dddfa4e6972d0044e4157626199a31b1)](https://circleci.com/gh/ambassify/smart-outline/tree/master)
+# Smart Outline
+[![CircleCI](https://circleci.com/gh/ambassify/smart-outline/tree/master.svg?style=svg&circle-token=447bceb7dddfa4e6972d0044e4157626199a31b1)](https://circleci.com/gh/ambassify/smart-outline/tree/master)
 Disabling focus outline without breaking accessibility.
 This library will only disable the focus outline when the user is using his mouse
 to navigate your web page. Once a users starts using his keyboard the outline is activated again
