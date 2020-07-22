@@ -19,6 +19,7 @@
 
     var defaultDomId = 'bbbx-a11y-fix';
     var defaultHideFocusCSS = '*:focus {outline:0 !important;}::-moz-focus-inner{border:0;}';
+    var defaultHtmlClass = 'so-keyboard-user';
     var options = null;
 
     var KEYCODE_TAB = 9;
@@ -41,8 +42,15 @@
         setCSS: function(css) {
             this.getStyleEl().innerHTML = css;
         },
+        setHtmlClass: function(cssClass) {
+            document.documentElement.classList.add(cssClass);
+        },
+        removeHtmlClass: function(cssClass) {
+            document.documentElement.classList.remove(cssClass);
+        },
         _clickListener: function() {
             smartOutline.setCSS(options.hideFocusCSS);
+            smartOutline.removeHtmlClass(options.htmlClass);
             window.removeEventListener('click', smartOutline._clickListener, false);
             window.addEventListener('keydown', smartOutline._keyDownListener); // eslint-disable-line
         },
@@ -62,6 +70,7 @@
                 return;
 
             smartOutline.setCSS('');
+            smartOutline.setHtmlClass(options.htmlClass);
             window.removeEventListener('keydown', smartOutline._keyDownListener, false);
             window.addEventListener('click', smartOutline._clickListener);
         },
@@ -87,7 +96,8 @@
             userOptions = userOptions || {};
             options = {
                 domId: userOptions.domId || defaultDomId,
-                hideFocusCSS: userOptions.hideFocusCSS || defaultHideFocusCSS
+                hideFocusCSS: userOptions.hideFocusCSS || defaultHideFocusCSS,
+                htmlClass: userOptions.htmlClass || defaultHtmlClass
             };
 
             // only add style element if it doesn't exist yet
