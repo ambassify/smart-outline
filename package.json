@@ -1,6 +1,6 @@
 {
   "name": "smart-outline",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Disabling focus outline without breaking accessibility",
   "main": "main.js",
   "scripts": {
