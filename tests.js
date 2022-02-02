@@ -31,6 +31,10 @@ QUnit.module('Smart Outline Tests', function( hooks ) {
         assert.ok(el.id === 'customid', 'Passed!');
     });
 
+    QUnit.test('Custom nonce option', function( assert ) {
+        var el = smartOutline.init({nonce: 'random'});
+        assert.ok(el.nonce === 'random', 'Passed!');
+    });
 
     QUnit.test('Custom hideFocusCSS option', function( assert ) {
         var el = smartOutline.init({hideFocusCSS: 'bla'});

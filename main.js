@@ -112,6 +112,9 @@
             style.id = options.domId;
             style.type = 'text/css';
 
+            if (userOptions.nonce)
+                style.nonce = userOptions.nonce;
+
             if(!head)
                 return false;
 

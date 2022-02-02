@@ -50,6 +50,7 @@ You can also [view the online QUnit test page](https://ambassify.github.io/smart
 |----------|:-------------:|------|
 | domId | `string` | ID that is assigned to the style element that gets injected in the DOM |
 | hideFocusCSS | `string` | Overwrite the default CSS to hide the focus outline when a user is using the mouse |
+| nonce | `string` | Add a nonce attribute to the injected style element for CSP enabled sites |
 
 ## Methods
 
